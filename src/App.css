@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#controls {
+  position: absolute;
+  left: 2.5%;
+  width: 1000px;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#color-input {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#colorx {
+  position: absolute;
+  top: 11px;
+  left: 2%;
+  width: 15%;
+  height: 30px;
+  padding: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+#marker-container {
+  position: absolute;
+  top: 26px;
+  left: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#marker-size {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin: 0 20px;
+  transform: translate(-50%, -50%);
+}
+
+#sliderContainer {
+  position: absolute;
+  top: 6px;
+  left: 26%;
+  margin: 0 15px;
+}
+
+#sliderDiv {
+  display: inline-block;
+  width: 200px;
+  padding: 2px 8px;
+  margin: 4px auto;
+}
+
+#paint-container {
+  position: absolute;
+  top: 60px;
+  left: 2.5%;
+  width: 500px;
+  height: 495px;
+  margin: 10px auto;
+}
+
+canvas {
+  background-color: white;
+  border: 1px solid rgb(169, 205, 246);
+}
+
+canvas:hover {
+  cursor: crosshair;
+}
+
+#button_group {
+  position: absolute;
+  padding: 5px;
+  top: 573px;
+  left: 11%;
 }
