@@ -6,7 +6,7 @@ import $ from 'jquery';
 import "./script.js";
 //import { css, jsx } from '@emotion/react';
 //import styled from '@emotion/styled';
-import { Button, Slider } from "@material-ui/core";
+import { Slider } from "@material-ui/core";
 
 class App extends React.Component {
 
@@ -48,7 +48,8 @@ class App extends React.Component {
   }
 
   handleSave = () => {
-    if (typeof (localStorage) !== null) {
+    var temp = typeof(localStorage);
+    if (temp !== null) {
       localStorage.setItem("imgCanvas", this.canvas.toDataURL());
     } else {
       window.alert("Your browser does not support local storage!");
